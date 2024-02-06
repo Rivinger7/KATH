@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 .fixed-top {
     transition: 0.5s;
     background: var(--bs-white);
@@ -119,7 +123,7 @@
 
 /*** Hero Header ***/
 .hero-header {
-    background-image: linear-gradient(rgba(72, 72, 70, 0.1), rgba(77, 74, 68, 0.1)), url(../images/background-banner-1.jpg);
+    background-image: linear-gradient(rgba(72, 72, 70, 0.1), rgba(77, 74, 68, 0.1)), url(../images/hero_image/background-banner-1.jpg);
     background-attachment: scroll, scroll;
     background-position: center center;
     background-repeat: no-repeat;
@@ -161,7 +165,7 @@
 
 .page-header {
     position: relative;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/cart-page-header-img.jpg);
+    /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/cart-page-header-img.jpg); */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -181,3 +185,289 @@
     }
 }
 /*** Hero Header end ***/
+
+/*** Category List start ***/
+.container.py-0.category-for-all{
+    padding-top: 0;
+    background-color: #ffffff95;
+}
+
+.category-subtitle{
+    border-bottom: solid 1px;
+}
+
+.link-category{
+    color: rgb(72, 72, 73);
+}
+
+.col-md-2.category-description:hover{
+    background-color: rgba(166, 166, 166, 0.319);
+}
+
+.category-subtitle h1{
+    text-align: center;
+    color: rgb(188, 154, 92) !important;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.category-for-all, .col-md-2.category-description.link-category.category-image{
+    /* background-color: rgb(0 0 0 / 6%); */
+    border-radius: 20px;
+}
+
+.category-in-box{
+    margin-top: 1%;
+    display: flex;
+}
+
+.col-md-2.category-description .link-category .category-image img{
+    width: 50%;
+    height: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.col-md-2.category-description .text-description{
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 768px){
+    .category-in-box{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .category-subtitle{
+        text-align: center;
+    }
+    .link-category .category-image img{
+        height: 20rem;
+    }
+
+}
+/* Category List End  */
+
+/* Feature Start */
+.container.py-1.feature-box{
+    margin-top: 1%;
+    background-color: #ffffff95;
+    border-radius: 20px;
+}
+.feature-box h1{
+    text-align: center;
+    border-bottom: 1px solid rgba(135, 134, 134, 0.241);
+    margin-bottom: 2%;
+}
+
+.half-part-in-left{
+    display: flex;
+}
+
+.half-part-in-left .left-part div img,
+.half-part-in-left .right-part div img{
+    width: 50%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.left-part, .right-part{
+    width: 20% !important;
+}
+
+.left-part div p,
+.right-part div p{
+    text-align: center;
+    font-weight: bold;
+}
+
+.half-part-in-right {
+    width: 100%;
+    margin-left: 5%;
+}
+
+.half-part-in-right .main-picture_1 img{
+    width: 100%;
+    height: 80%;
+    border-radius: 20px;
+}
+
+.half-part-in-right .main-picture_2 img{
+    margin-top: 10%;
+    width: 100%;
+}
+
+
+/* Best Seller Start */
+.container.py-1.best-seller-banner{
+    background-color: #ffffff95;
+    margin-top: 2%;
+    border-radius: 0 0 20px 20px;
+}
+
+.best-seller-header{
+    margin-top: 1%;
+    background-image: url(https://cdn0.fahasa.com/media/wysiwyg/Thang-6-2020/banner_vote_06_2020.png);
+    padding: 1%;
+    background-size:cover;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.best-seller-header h3{
+    color: #FFFFFF !important;
+}
+
+.button{
+    padding: 1% 3%; 
+    border: none;
+    background-color: transparent;
+}
+
+.button.active{
+    border-bottom: 2px solid red !important;
+}
+
+.content{
+    display: none;
+}
+
+.content.active{
+    display: block;
+    margin-top: 2%;
+}
+
+
+.best-seller-button .button{
+    margin-left: 2%;
+}
+
+.up-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 2%;
+}
+
+.content-first{
+    border-right: 1px solid rgba(128, 128, 128, 0.291);
+}
+
+.content .content-first a{
+    margin-top: 20px;
+    display: flex;
+}
+
+.content-first a:hover{
+    border-right: 2px solid orange ;
+    background-color: #9f9f9f43;
+}
+
+.content a img{
+    width: 20%;
+}
+
+.col-md-5.description-text{
+    width: 60%;
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+
+
+/* Footer Start */
+.footer h3{
+    background-color: rgba(73, 73, 73, 0.556);
+    border-radius: 30px 30px 0 0;
+    margin-top: 1%;
+    margin-bottom: 0;
+    padding-bottom: 1%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-style: italic;
+}
+
+.footer-inside{
+    background-color: #928c3073;
+}
+
+.container-fluid.footer-in-box{
+    display: flex;
+}
+.col-md-6.footer-left{
+    border-right: 1px solid rgba(0, 0, 0, 0.29);
+}
+.col-md-6.footer-left span{
+    font-weight: normal !important;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.col-md-6.footer-right{
+    text-align: right;
+}
+
+.col-md-6.footer-right div,
+.col-md-6.footer-right div h6,
+.footer h3,
+ .footer div span
+{
+    color: #FFFF;
+}
+
+
+.col-md-6.footer-right img,.payment-image img{
+    width: 25%;
+}
+
+.information-part .facebook-icon{
+    color: rgba(0, 0, 255, 0.395);
+    padding-right: 2%;
+}
+.information-part .twitter-icon{
+    color:rgba(8, 176, 185, 0.33);
+    padding-right: 2%;
+}
+.information-part .instagram-icon{
+    color: rgba(170, 113, 7, 0.737);
+    padding-right: 2%;
+}
+.information-part .youtube-icon{
+    color: rgba(255, 0, 0, 0.277);
+    padding-right: 2%;
+}
+
+.transport-image img,
+.payment-image img{
+    padding-left: 2%;
+}
+
+.footer-right h5{
+    color: #FFFFFF;
+}
+
+.copyright-part h2{
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 15px;
+    color: #FFFF;
+}
+/* Footer End */
+
+
+/* Back-to-top Button */
+.back-to-top a img{
+    width: 5%;
+    position: fixed;
+    bottom: 30%;
+    right: 1%;
+}
