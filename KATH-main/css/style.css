@@ -385,10 +385,21 @@ html{
 
 
 /* Footer Start */
+
+.footer {
+    width: 100%;
+}
+
+#footer_image img {
+    width: 27%;
+    margin-bottom: 1%;
+}
+
 .footer h3{
     background-color: rgba(73, 73, 73, 0.556);
+    /* background-color: ; */
     border-radius: 30px 30px 0 0;
-    margin-top: 1%;
+    margin-top: 2%;
     margin-bottom: 0;
     padding-bottom: 1%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -396,8 +407,19 @@ html{
     font-style: italic;
 }
 
+.footer-item {
+    /* text-align: -moz-center; */
+    /* text-align: -webkit-center; */
+    text-align: center;
+}
+
 .footer-inside{
-    background-color: #928c3073;
+    /* background-color: #928c3073; */
+    background-color: #D2B48C;
+}
+
+#momo_payment {
+    width: 5%;
 }
 
 .container-fluid.footer-in-box{
@@ -421,7 +443,12 @@ html{
 .footer h3,
  .footer div span
 {
-    color: #FFFF;
+    /* color: #FFFF; */
+    color: #808080;
+}
+
+#h3_config {
+    color: #f4f6f8;
 }
 
 
@@ -452,7 +479,8 @@ html{
 }
 
 .footer-right h5{
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
+    color: #45595b;
 }
 
 .copyright-part h2{
