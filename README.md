@@ -4,4 +4,4 @@ Use command
 
 >***git merge Beta-Branch***
 
- in origin branch, thank you!
+ in origin / main branch, thank you!
