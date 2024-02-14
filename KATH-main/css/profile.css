@@ -21,10 +21,6 @@ body {
     padding-left: 1.5rem !important;
 }
 
-.active {
-    background-color: red;
-}
-
 .blue_color:hover {
     color: #0061f2;
 }  

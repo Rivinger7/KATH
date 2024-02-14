@@ -74,6 +74,11 @@
     color: var(--bs-white) !important;
 }
 
+.buy_button {
+    background-color: red;
+    color: white !important;
+}
+
 /*** Topbar Start ***/
 .fixed-top {
     transition: 0.5s;

@@ -1,11 +1,32 @@
-function highlightLink(link) {
-    // Xóa lớp 'active' từ tất cả các liên kết
-    var navLinks = document.querySelectorAll('.list-unstyled .nav-link');
-    navLinks.forEach(function (navLink) {
-        navLink.classList.remove('active');
-    });
+var profile = document.getElementById('profile_option');
+var myOrder = document.getElementById('my-order_option');
+var voucher = document.getElementById('voucher_option');
 
-    // Thêm lớp 'active' cho liên kết đã được click
-    var anchor = link.querySelector('.nav-link');
-    anchor.classList.add('active');
+var profile_content = document.getElementById('profile_content');
+var myOrder_content = document.getElementById('my-order_content');
+var voucher_content = document.getElementById('voucher_content');
+
+profile.addEventListener('click', function() {
+    displayContent(profile, profile_content);
+});
+
+myOrder.addEventListener('click', function() {
+    displayContent(myOrder, myOrder_content);
+});
+
+voucher.addEventListener('click', function() {
+    displayContent(voucher, voucher_content);
+});
+
+function displayContent(button, content) {
+    var allButtons = document.querySelectorAll('.button');
+    var allContents = document.querySelectorAll('.content');
+    allButtons.forEach(function(element) {
+        element.classList.remove('active');
+    });
+    allContents.forEach(function(element) {
+        element.classList.remove('active');
+    });
+    button.classList.add('active');
+    content.classList.add('active');
 }
