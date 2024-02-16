@@ -1,2 +1,2 @@
 # KATH
-A PRJ301 Project used for demonstrating team collaboration
+A Project used for demonstrating team collaboration
