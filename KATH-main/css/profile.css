@@ -1,7 +1,14 @@
 body {
     margin-top: 20px;
     color: #9b9ca1;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
+
+*::-webkit-scrollbar {
+    display: none;
+  }
+
 
 .bg-secondary-soft {
     background-color: rgba(208, 212, 217, 0.1) !important;
@@ -109,8 +116,26 @@ body {
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
+.logo-img{
+    border: none;
+}
 
+.best-seller-button.text-center{
+    overflow-x: auto;
+}
 
+.logout-button{
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0 0 0 auto;
+    text-align:center;
+
+}
+
+.logout-button:hover{
+    color: rgba(255, 0, 0, 0.858);
+}
 
 /* My Order Start */
 .panel-order .row {
@@ -162,6 +187,10 @@ body {
     border-radius: 3px;
     color: var(--bs-white);
     padding: .1rem;
+}
+
+.history-button.open{
+    rotate: -180deg;
 }
 
 .order-history-content{

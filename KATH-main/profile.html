@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/profile.css">
@@ -18,16 +19,21 @@
 <body>
     <div class="container">
         <div class="row">
+            <div class="label-img col-md-2"><a href="homepage.html"> <img class="logo-img img-fluid img-thumbnail d-inline" src="./images/header_image/KATH_label.png" alt=""></a></div>
             <div class="col-12">
-                <!-- Nav-Link Start-->
-                <div class="best-seller-button text-center">
-                    <button id="profile_option" class="button active">Profile</button>
-                    <button id="my-order_option" class="button">Order History</button>
-                    <button id="voucher_option" class="button">Voucher</button>
-                    <!-- <button id="children_option" class="button">Children Book</button> -->
-                    <!-- <button id="other_option" class="button">Other</button> -->
+                <div class="header-around">
+                    <!-- Label -->
+                    
+                    <!-- Nav-Link Start-->
+                    <div class="best-seller-button text-center col-md-12">
+                        <button id="profile_option" class="button active">Profile</button>
+                        <button id="my-order_option" class="button">Order History</button>
+                        <button id="voucher_option" class="button">Voucher</button>
+                        <!-- <button id="children_option" class="button">Children Book</button> -->
+                        <!-- <button id="other_option" class="button">Other</button> -->
+                    </div>
+                    <!-- Nav-Link End-->
                 </div>
-                <!-- Nav-Link End-->
 
                 <!-- Profile Content Start -->
                 <div id="profile_content" class="content active">
@@ -40,7 +46,10 @@
                     <form class="file-upload">
                         <!-- Contact Info Start -->
                         <div class="row g-3">
-                            <h4 class="mb-4 mt-0">Contact detail</h4>
+                            <div class="d-flex info-logout w-100">
+                                <h4 class="mb-4 mt-0 col-md-11">Contact detail</h4>
+                                <button class="logout-button"><div>Log out!</div> <i class="material-icons" style="font-size: 40px;">exit_to_app</i></button>
+                            </div>
                             <!-- First Name -->
                             <div class="col-md-6">
                                 <label class="form-label">First Name *</label>
@@ -152,8 +161,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <button class="button history-button"> <i
-                                    class="fas fa-angle-down fa-2x"></i></button>
+                            <button class="button history-button"> <i class="fas fa-angle-down fa-2x"></i></button>
                             <div class="order-history-content">
                                 <div class="banner-content">
                                     <img class="img-fluid" src="images/shoping_image/best-product-2.jpg" alt="product">
@@ -194,8 +202,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <button class="button history-button"> <i    
-                                    class="fas fa-angle-down fa-2x"></i></button>
+                            <button class="button history-button"> <i class="fas fa-angle-down fa-2x"></i></button>
                             <div class="order-history-content">
                                 <div class="banner-content">
                                     <img class="img-fluid" src="images/shoping_image/best-product-2.jpg" alt="product">
@@ -236,8 +243,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <button class="button history-button"> <i
-                                    class="fas fa-angle-down fa-2x"></i></button>
+                            <button class="button history-button"> <i class="fas fa-angle-down fa-2x"></i></button>
                             <div class="order-history-content">
                                 <div class="banner-content">
                                     <img class="img-fluid" src="images/shoping_image/best-product-2.jpg" alt="product">
