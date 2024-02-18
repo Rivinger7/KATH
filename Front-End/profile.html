@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/profile.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="label-img col-md-2"><a href="homepage.html"> <img class="logo-img img-fluid img-thumbnail d-inline" src="./images/header_image/KATH_label.png" alt=""></a></div>
+            <div class="col-12">
+                <div class="header-around">
+                    <!-- Label -->
+                    
+                    <!-- Nav-Link Start-->
+                    <div class="nav-button text-center col-md-12">
+                        <button id="profile_option" class="button active">Profile</button>
+                        <button id="my-order_option" class="button">Order History</button>
+                        <button id="voucher_option" class="button">Voucher</button>
+                        <!-- <button id="children_option" class="button">Children Book</button> -->
+                        <!-- <button id="other_option" class="button">Other</button> -->
+                    </div>
+                    <!-- Nav-Link End-->
+                </div>
+
+                <!-- Profile Content Start -->
+                <div id="profile_content" class="content active">
+                    <!-- Page title -->
+                    <div class="my-5">
+                        <h3>My Profile</h3>
+                        <hr>
+                    </div>
+                    <!-- Form START -->
+                    <form class="file-upload">
+                        <!-- Contact Info Start -->
+                        <div class="row g-3">
+                            <div class="d-flex info-logout w-100">
+                                <h4 class="mb-4 mt-0 col-md-11">Contact detail</h4>
+                                <button class="logout-button"><div>Log out!</div> <i class="material-icons" style="font-size: 40px;">exit_to_app</i></button>
+                            </div>
+                            <!-- First Name -->
+                            <div class="col-md-6">
+                                <label class="form-label">First Name *</label>
+                                <input type="text" class="form-control" aria-label="First name"
+                                    placeholder="Ex: Scaralet">
+                            </div>
+                            <!-- Last name -->
+                            <div class="col-md-6">
+                                <label class="form-label">Last Name *</label>
+                                <input type="text" class="form-control" aria-label="Last name" placeholder="Ex: Doe">
+                            </div>
+                            <!-- Phone number -->
+                            <div class="col-md-6">
+                                <label class="form-label">Phone number *</label>
+                                <input type="text" class="form-control" aria-label="Phone number"
+                                    placeholder="Ex: (333) 000 555">
+                            </div>
+                            <!-- Mobile number -->
+                            <div class="col-md-6">
+                                <label class="form-label">Mobile number *</label>
+                                <input type="text" class="form-control" aria-label="Phone number"
+                                    placeholder="Ex: +91 9852 8855 252">
+                            </div>
+                            <!-- Email -->
+                            <div class="col-md-6">
+                                <label for="inputEmail4" class="form-label">Email *</label>
+                                <input type="email" class="form-control" id="inputEmail4"
+                                    placeholder="example@homerealty.com">
+                            </div>
+                            <!-- Skype -->
+                            <div class="col-md-6">
+                                <label class="form-label">Skype *</label>
+                                <input type="text" class="form-control" aria-label="Phone number"
+                                    placeholder="Ex: Scaralet D">
+                            </div>
+                        </div>
+                        <!-- Contact Info End -->
+                        <!-- Social media detail -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- Delete account card-->
+                            <div class="card mb-4">
+                                <div class="card-header">Delete Account</div>
+                                <div class="card-body">
+                                    <p>Deleting your account is a permanent action and cannot be undone. If you are
+                                        sure
+                                        you
+                                        want to delete your account, select the button below.</p>
+                                    <button class="btn btn-danger-soft text-danger" type="button">I understand,
+                                        delete
+                                        my
+                                        account</button>
+                                </div>
+                            </div>
+
+                            <!-- Change password -->
+                            <div class="col-xxl-6">
+                                <div class="px-4 py-4 rounded">
+                                    <div class="row g-3">
+                                        <h4 class="">Change Password</h4>
+                                        <!-- Old password -->
+                                        <div class="col-md-6">
+                                            <label for="exampleInputPassword1" class="form-label">Old password
+                                                *</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                        </div>
+                                        <!-- New password -->
+                                        <div class="col-md-6">
+                                            <label for="exampleInputPassword2" class="form-label">New password
+                                                *</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword2">
+                                        </div>
+                                        <!-- Confirm password -->
+                                        <div class="col-md-12">
+                                            <label for="exampleInputPassword3" class="form-label">Confirm Password
+                                                *</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword3">
+                                        </div>
+                                        <!-- button -->
+                                        <div class="gap-3 d-md-flex justify-content-md-end text-center">
+                                            <!-- <button type="button" class="btn btn-danger btn-lg">Delete profile</button> -->
+                                            <button type="button" class="btn btn-primary btn-lg text-white">Update
+                                                profile</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Row END -->
+
+                    </form> <!-- Form END -->
+                </div>
+                <!-- Profile Content End -->
+
+                <!-- My Order History Start -->
+                <div id="my-order_content" class="content">
+                    <div class="panel-order">
+                        <div class="row mt-4">
+                            <div class="col-md-1"><img src="https://bootdey.com/img/Content/user_1.jpg"
+                                    class="media-object img-thumbnail" /></div>
+                            <div class="col-md-11">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="pull-right"><label
+                                                class="label label-info"><strong>Accepted</strong></label></div>
+                                        <span><strong>Order ID</strong></span> <span
+                                            class="label label-info">#897698jRT</span><br />
+                                        Quantity : 3<br /> Cost: $60<br />
+                                        <div class="col-md-12">Order made on: 06/20/2014 by <a href="#">TAO</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="button order-detail-button"> <i class="fas fa-angle-down fa-2x"></i></button>
+                            <div class="order-detail-content">
+                                <div class="banner-content">
+                                    <img class="img-fluid" src="images/shoping_image/best-product-2.jpg" alt="product">
+                                    <div class="content-description"> Lorem ipsum dolor sit, amet consectetur<br>
+                                        <strong>Price: 20$</strong>
+                                    </div>
+
+                                </div>
+                                <div class="banner-content">
+                                    <img class="img-fluid" src="images/shoping_image/best-product-3.jpg" alt="product">
+                                    <div class="content-description"> Lorem ipsum dolor sit, amet consectetur<br>
+                                        <strong>Price: 20$</strong>
+                                    </div>
+
+                                </div>
+                                <div class="banner-content">
+                                    <img class="img-fluid" src="images/shoping_image/best-product-4.jpg" alt="product">
+                                    <div class="content-description"> Lorem ipsum dolor sit, amet consectetur<br>
+                                        <strong>Price: 20$</strong>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col-md-1"><img src="https://bootdey.com/img/Content/user_1.jpg"
+                                    class="media-object img-thumbnail" /></div>
+                            <div class="col-md-11">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="pull-right"><label
+                                                class="label label-info"><strong>Accepted</strong></label></div>
+                                        <span><strong>Order ID</strong></span> <span
+                                            class="label label-info">#897698jRT</span><br />
+                                        Quantity : 3<br /> Cost: $60<br />
+                                        <div class="col-md-12">Order made on: 06/20/2014 by <a href="#">TAO</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="button order-detail-button"> <i class="fas fa-angle-down fa-2x"></i></button>
+                            <div class="order-detail-content">
+                                <div class="banner-content">
+                                    <img class="img-fluid" src="images/shoping_image/best-product-2.jpg" alt="product">
+                                    <div class="content-description"> Lorem ipsum dolor sit, amet consectetur<br>
+                                        <strong>Price: 20$</strong>
+                                    </div>
+
+                                </div>
+                                <div class="banner-content">
+                                    <img class="img-fluid" src="images/shoping_image/best-product-3.jpg" alt="product">
+                                    <div class="content-description"> Lorem ipsum dolor sit, amet consectetur<br>
+                                        <strong>Price: 20$</strong>
+                                    </div>
+
+                                </div>
+                                <div class="banner-content">
+                                    <img class="img-fluid" src="images/shoping_image/best-product-4.jpg" alt="product">
+                                    <div class="content-description"> Lorem ipsum dolor sit, amet consectetur<br>
+                                        <strong>Price: 20$</strong>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col-md-1"><img src="https://bootdey.com/img/Content/user_1.jpg"
+                                    class="media-object img-thumbnail" /></div>
+                            <div class="col-md-11">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="pull-right"><label
+                                                class="label label-info"><strong>Accepted</strong></label></div>
+                                        <span><strong>Order ID</strong></span> <span
+                                            class="label label-info">#897698jRT</span><br />
+                                        Quantity : 3<br /> Cost: $60<br />
+                                        <div class="col-md-12">Order made on: 06/20/2014 by <a href="#">TAO</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="button order-detail-button"> <i class="fas fa-angle-down fa-2x"></i></button>
+                            <div class="order-detail-content">
+                                <div class="banner-content">
+                                    <img class="img-fluid" src="images/shoping_image/best-product-2.jpg" alt="product">
+                                    <div class="content-description"> Lorem ipsum dolor sit, amet consectetur<br>
+                                        <strong>Price: 20$</strong>
+                                    </div>
+
+                                </div>
+                                <div class="banner-content">
+                                    <img class="img-fluid" src="images/shoping_image/best-product-3.jpg" alt="product">
+                                    <div class="content-description"> Lorem ipsum dolor sit, amet consectetur<br>
+                                        <strong>Price: 20$</strong>
+                                    </div>
+
+                                </div>
+                                <div class="banner-content">
+                                    <img class="img-fluid" src="images/shoping_image/best-product-4.jpg" alt="product">
+                                    <div class="content-description"> Lorem ipsum dolor sit, amet consectetur<br>
+                                        <strong>Price: 20$</strong>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- My Order End -->
+
+
+                <!-- Voucher Start -->
+                <div id="voucher_content" class="content">
+
+                </div>
+                <!-- Voucher End -->
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/profile.js"></script>
+
+</body>
+
+</html>
