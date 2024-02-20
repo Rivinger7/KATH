@@ -1,10 +1,12 @@
 // Navigation Header
 var profile = document.getElementById('profile_option');
 var myOrder = document.getElementById('my-order_option');
+var shipping_address = document.getElementById('shipping-address_option');
 var voucher = document.getElementById('voucher_option');
 
 var profile_content = document.getElementById('profile_content');
 var myOrder_content = document.getElementById('my-order_content');
+var shipping_address_content = document.getElementById('shipping-address_content');
 var voucher_content = document.getElementById('voucher_content');
 
 profile.addEventListener('click', function () {
@@ -13,6 +15,10 @@ profile.addEventListener('click', function () {
 
 myOrder.addEventListener('click', function () {
     displayContent(myOrder, myOrder_content);
+});
+
+shipping_address.addEventListener('click', function () {
+    displayContent(shipping_address, shipping_address_content);
 });
 
 voucher.addEventListener('click', function () {
