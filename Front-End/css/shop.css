@@ -103,9 +103,9 @@ html {
     margin-top: 0;
 }
 
-.d-flex.m-3.me-0 a {
+/* .d-flex.m-3.me-0 a {
     padding-left: 18%;
-}
+} */
 
 .input-book-form {
     width: 100%;
@@ -309,22 +309,6 @@ html {
 .navbar {
     height: 100px;
     border-bottom: 1px solid rgba(255, 255, 255, .1);
-}
-
-.navbar .navbar-nav .nav-link:hover,
-.navbar .navbar-nav .nav-link.active,
-.fixed-top.bg-white .navbar .navbar-nav .nav-link:hover,
-.fixed-top.bg-white .navbar .navbar-nav .nav-link.active {
-    color: var(--bs-primary);
-}
-
-.navbar .dropdown-toggle::after {
-    border: none;
-    content: "\f107";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 700;
-    vertical-align: middle;
-    margin-left: 8px;
 }
 
 @media (min-width: 1200px) {
