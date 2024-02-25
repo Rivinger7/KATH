@@ -1,68 +1,53 @@
-<!-- Contact Info -->
-<div class="row g-3">
-    <div class="d-flex info-logout w-100">
-        <h4 class="mb-4 mt-0 col-md-11">Contact detail</h4>
-        <button class="logout-button">
-            <div>Log out!</div> <i class="material-icons"
-                style="font-size: 40px;">exit_to_app</i>
-        </button>
-    </div>
-    <!-- First Name -->
-    <div class="col-md-6">
-        <label class="form-label">First Name *</label>
-        <input type="text" class="form-control" aria-label="First name"
-            placeholder="Ex: Scaralet">
-    </div>
-    <!-- Last name -->
-    <div class="col-md-6">
-        <label class="form-label">Last Name *</label>
-        <input type="text" class="form-control" aria-label="Last name" placeholder="Ex: Doe">
-    </div>
-    <!-- Phone number -->
-    <div class="col-md-6">
-        <label class="form-label">Phone number *</label>
-        <input type="text" class="form-control" aria-label="Phone number"
-            placeholder="Ex: (333) 000 555">
-    </div>
-    <!-- Mobile number -->
-    <div class="col-md-6">
-        <label class="form-label">Mobile number *</label>
-        <input type="text" class="form-control" aria-label="Phone number"
-            placeholder="Ex: +91 9852 8855 252">
-    </div>
-    <!-- Email -->
-    <div class="col-md-6">
-        <label for="inputEmail4" class="form-label">Email *</label>
-        <input type="email" class="form-control" id="inputEmail4"
-            placeholder="example@homerealty.com">
-    </div>
-    <!-- Skype -->
-    <div class="col-md-6">
-        <label class="form-label">Skype *</label>
-        <input type="text" class="form-control" aria-label="Phone number"
-            placeholder="Ex: Scaralet D">
-    </div>
-</div>
+literature.addEventListener('click', function () {
+    displayContent(literature, literature_content);
+});
+foreign.addEventListener('click', function () {
+    displayContent(foreign, foreign_content);
+});
+economic.addEventListener('click', function () {
+    displayContent(economic, economic_content);
+});
+children.addEventListener('click', function () {
+    displayContent(children, children_content);
+});
+other.addEventListener('click', function () {
+    displayContent(other, other_content);
+});
 
-<!-- Upload Avatar -->
-<div class="row g-9">
-    <div class="bg-secondary-soft px-4 py-5 rounded">
-        <div class="row g-3">
-            <h4 class="mb-4 mt-0">Upload your profile photo</h4>
-            <div class="text-center">
-                <!-- Image upload -->
-                <div class="square position-relative display-2 mb-3">
-                    <i
-                        class="fas fa-fw fa-user position-absolute top-50 start-50 translate-middle text-secondary"></i>
-                </div>
-                <!-- Button -->
-                <input type="file" id="customFile" name="file" hidden="">
-                <label class="btn btn-success-soft btn-block" for="customFile">Upload</label>
-                <button type="button" class="btn btn-danger-soft">Remove</button>
-                <!-- Content -->
-                <p class="text-muted mt-3 mb-0"><span class="me-1">Note:</span>Minimum size
-                    300px * 300px</p>
-            </div>
-        </div>
-    </div>
-</div>
+// Testing Start
+new1.addEventListener('click', function () {
+    displayContentNeww(new1, new1_content);
+});
+
+new2.addEventListener('click', function () {
+    displayContentNeww(new2, new2_content);
+});
+
+new3.addEventListener('click', function () {
+    displayContentNeww(new3, new3_content);
+});
+
+new4.addEventListener('click', function () {
+    displayContentNeww(new4, new4_content);
+});
+
+new5.addEventListener('click', function () {
+    displayContentNeww(new5, new5_content);
+});
+
+// Best Publisher
+NXB_Tre.addEventListener('click', function () {
+    displayContentBestPublisher(NXB_Tre, NXB_Tre_content);
+});
+
+Alpha_Book.addEventListener('click', function () {
+    displayContentBestPublisher(Alpha_Book, Alpha_Book_content);
+});
+
+Phu_Nu.addEventListener('click', function () {
+    displayContentBestPublisher(Phu_Nu, Phu_Nu_content);
+});
+
+Sakura_Light_Novel.addEventListener('click', function () {
+    displayContentBestPublisher(Sakura_Light_Novel, Sakura_Light_Novel_content);
+});

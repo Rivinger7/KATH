@@ -66,7 +66,7 @@ html {
 }
 
 .navbar .navbar-nav .nav-link {
-    padding: 10px 15px;
+    padding: 10px 15px !important;
     font-size: 16px;
     transition: .5s;
 }
@@ -348,6 +348,15 @@ html {
     margin-top: 2%;
 }
 
+.book-detail {
+    display: none;
+    /* Additional styling for detail boxes */
+}
+
+.book-detail.active {
+    display: flex !important;
+}
+
 /* Owl Start */
 .owl-content {
     display: none;
@@ -359,6 +368,18 @@ html {
 }
 
 /* Owl End */
+
+
+/* Best Publisher Start */
+.publisher-content {
+    display: none;
+}
+
+.publisher-content.active {
+    display: block;
+    margin-top: 2%;
+}
+/* Best Publisher End */
 
 .best-seller-button .button {
     margin-left: 2%;
@@ -385,7 +406,7 @@ html {
     background-color: #9f9f9f43;
 }
 
-.content a img {
+.content-first img {
     width: 20%;
 }
 
@@ -396,11 +417,6 @@ html {
     flex-direction: column;
     justify-content: center;
 }
-
-
-
-
-
 
 /* Footer Start */
 
