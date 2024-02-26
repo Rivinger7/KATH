@@ -26,17 +26,17 @@
 
 <body>
     <!-- Header Start -->
-    <div class="container-fluid fixed-top">
+    <div class="container-fluid fixed-top bg-white pb-4">
         <div class="container px-0">
             <nav class="navbar navbar-light bg-white navbar-expand-xl">
-                <a href="homepage.html" class="navbar-brand col-md-2"><img src="images/header_image/KATH_label.png"
+                <a href="homepage.html" class="navbar-brand w-30 col-md-2"><img src="images/header_image/KATH_label.png"
                         alt=""></a>
                 <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars text-primary"></span>
                 </button>
-                <div class="collapse navbar-collapse bg-white col-md-10" id="navbarCollapse">
-                    <div class="navbar-nav mx-auto col-md-7">
+                <div class="collapse navbar-collapse bg-white col-md-10 d-flex" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto col-md-7 w-50 justify-content-space-between">
                         <a href="homepage.html" class="nav-item nav-link">Home</a>
                         <a href="#" class="nav-item nav-link">About</a>
                         <div class="nav-item dropdown">
@@ -76,15 +76,21 @@
                     </div>
                 </div>
             </nav>
-            <div id="input-box">
-                <form class="input-book-form" action="shop.html" method="get">
+            <div id="input-box w-60">
+                <form class="input-book-form w-50 text-center mx-auto" action="shop.html" method="get">
+                    <span>
                     <input type="text" name="search_book_input" id="book-input-box"
-                        placeholder="  What book do you need today?">
-                    <input type="submit" value="Search" id="submit-button">
+                        placeholder="What book do you need today?">
+                        <button type="submit" id="submit-button"> <i class="fas fa-search"></i></button>
+                    </span>
+                    
                 </form>
             </div>
         </div>
     </div>
+
+
+
     <!-- Header End -->
 
     <!-- Hero Start -->
@@ -97,7 +103,7 @@
                 </div>
                 <div class="col-md-12 col-lg-5">
                     <div id="carouselId" class="carousel slide position-relative" data-bs-ride="carousel">
-                        <div class="carousel-item active rounded">
+                        <div class="carousel-item active rounded position-relative">
                             <img src="images/hero_image/hero-4.jpg" class="img-fluid w-100 h-100 bg-secondary rounded"
                                 alt="First slide">
                         </div>
@@ -109,62 +115,62 @@
     <!-- Hero End -->
 
     <!-- Category List Start -->
-    <div class="container py-0 category-for-all">
-        <div class="category-subtitle">
+    <div class="container py-0 category-for-all rounded-2">
+        <div class="category-subtitle border-bottom">
             <h1>Category List</h1>
         </div>
-        <div class="container-fluid category-in-box">
+        <div class="container-fluid d-flex mt-3">
             <div class="col-md-2 category-description">
                 <a href="#" class="link-category">
-                    <div class="category-image">
+                    <div class="category-image rounded-2">
                         <img src="images/category_image/manga.jpg" alt="Manga">
                     </div>
-                    <div class="text-description">Manga</div>
+                    <div class="text-description text-center">Manga</div>
                 </a>
             </div>
 
             <div class="col-md-2 category-description">
                 <a href="#" class="link-category">
-                    <div class="category-image">
+                    <div class="category-image rounded-2">
                         <img src="images/category_image/child.jpg" alt="Child Book">
                     </div>
-                    <div class="text-description">Child</div>
+                    <div class="text-description text-center">Child</div>
                 </a>
             </div>
 
             <div class="col-md-2 category-description">
                 <a href="#" class="link-category">
-                    <div class="category-image">
+                    <div class="category-image rounded-2">
                         <img src="images/category_image/novel.jpg" alt="Novel">
                     </div>
-                    <div class="text-description">Novel</div>
+                    <div class="text-description text-center">Novel</div>
                 </a>
             </div>
 
             <div class="col-md-2 category-description">
                 <a href="#" class="link-category">
-                    <div class="category-image">
+                    <div class="category-image rounded-2">
                         <img src="images/category_image/history.jpg" alt="Histoty Book">
                     </div>
-                    <div class="text-description">History</div>
+                    <div class="text-description text-center">History</div>
                 </a>
             </div>
 
             <div class="col-md-2 category-description">
                 <a href="#" class="link-category">
-                    <div class="category-image">
+                    <div class="category-image rounded-2">
                         <img src="images/category_image/textbook.jpg" alt="Textbook">
                     </div>
-                    <div class="text-description">Textbook</div>
+                    <div class="text-description text-center">Textbook</div>
                 </a>
             </div>
 
             <div class="col-md-2 category-description">
                 <a href="#" class="link-category">
-                    <div class="category-image">
+                    <div class="category-image rounded-2">
                         <img src="images/category_image/daily.jpg" alt="Daily Book">
                     </div>
-                    <div class="text-description">Daily</div>
+                    <div class="text-description text-center">Daily</div>
                 </a>
             </div>
         </div>
@@ -184,7 +190,7 @@
 
     <!-- Feature Start -->
     <div class="container py-1 feature-box">
-        <h1>Feature</h1>
+        <h1 class="text-center border-bottom mb-3">Feature</h1>
         <div class="half-part-in-left">
             <div class="col-md-3 left-part">
                 <div>
@@ -200,7 +206,8 @@
                     <p>Meticulously Blooming...</p>
                 </div>
             </div>
-            <div class="col-md-3 right-part">
+            
+            <div class="col-md-3 right-part w-20">
                 <div>
                     <img src="images/feature_image/feature_small_2.jpg" alt="devil-eyes goat">
                     <p>Children in Black Ocean</p>
@@ -214,6 +221,7 @@
                     <p>999 Letters Send To Yourself</p>
                 </div>
             </div>
+
             <div class="col-md-6 half-part-in-right">
                 <div class="main-picture_1">
                     <img src="images/feature_image/feature_big.jpg" alt="">
@@ -229,7 +237,7 @@
     <!-- Best Seller Start -->
     <div class="container py-1 best-seller-banner">
         <div class="best-seller-header">
-            <h3>Best Seller</h3>
+            <h3 class="text-light">Best Seller</h3>
         </div>
         <div class="best-seller-button">
             <button id="literature_option" class="button button-option-normal active">Literature</button>
@@ -240,43 +248,43 @@
         </div>
         <div>
             <div id="literature_content" class="content">
-                <div class="row">
+                <div class="row pb-3">
                     <div class="col-md-5 content-first img-fluid">
                         <a href="" class="first-best-book">
-                            <div class="col-md-.5 fas fa-arrow-up up-icon"> 01 </div>
+                            <div class="col-md-.5 fas fa-arrow-up d-flex flex-column justify-content-center px-2"> 01 </div>
                             <img src="images/best_seller/literature1.jpg" alt="" class="col-md-1">
-                            <div class="col-md-5 description-text">Forensic Records - Uncomplete bodies</div>
+                            <div class="col-md-5 description-text w-60 m-3 d-flex flex-direction-column justify-content-center left-0 w-60 ml-3 d-flex flex-direction-column justify-content-center">Forensic Records - Uncomplete bodies</div>
                         </a>
 
                         <a href="" class="second-best-book">
-                            <div class="col-md-.5 fas fa-arrow-up up-icon"> 02 </div>
+                            <div class="col-md-.5 fas fa-arrow-up d-flex flex-column justify-content-center px-2"> 02 </div>
                             <img src="images/best_seller/literature2.jpg" alt="" class="col-md-1">
-                            <div class="col-md-5 description-text">Forensic Records - Mysterious deaths</div>
+                            <div class="col-md-5 description-text w-60 m-3 d-flex flex-direction-column justify-content-center left-0">Forensic Records - Mysterious deaths</div>
                         </a>
 
                         <a href="" class="third-best-book">
-                            <div class="col-md-.5 fas fa-arrow-up up-icon"> 03 </div>
+                            <div class="col-md-.5 fas fa-arrow-up d-flex flex-column justify-content-center px-2"> 03 </div>
                             <img src="images/best_seller/literature3.jpg" alt="" class="col-md-1">
-                            <div class="col-md-5 description-text">Forensic Records - When Corpses Can Talk</div>
+                            <div class="col-md-5 description-text w-60 m-3 d-flex flex-direction-column justify-content-center left-0">Forensic Records - When Corpses Can Talk</div>
                         </a>
 
                         <a href="" class="fourth-best-book">
-                            <div class="col-md-.5 fas fa-arrow-up up-icon"> 04 </div>
+                            <div class="col-md-.5 fas fa-arrow-up d-flex flex-column justify-content-center px-2"> 04 </div>
                             <img src="images/best_seller/literature4.png" alt="" class="col-md-1">
-                            <div class="col-md-5 description-text">Combo Full Forensic Records</div>
+                            <div class="col-md-5 description-text w-60 m-3 d-flex flex-direction-column justify-content-center left-0">Combo Full Forensic Records</div>
                         </a>
 
                         <a href="" class="fifth-best-book">
-                            <div class="col-md-.5 fas fa-arrow-up up-icon"> 05 </div>
+                            <div class="col-md-.5 fas fa-arrow-up d-flex flex-column justify-content-center px-2"> 05 </div>
                             <img src="images/best_seller/literature5.png" alt="" class="col-md-1">
-                            <div class="col-md-5 description-text">Chilren In Black Ocean</div>
+                            <div class="col-md-5 description-text w-60 m-3 d-flex flex-direction-column justify-content-center left-0">Chilren In Black Ocean</div>
                         </a>
                     </div>
                     <div class="col-md-7 content-second">
                         <div id="first-book-detail-literature" class="row book-detail">
                             <div class="col-md-5">
                                 <a href="">
-                                    <!-- <div class="col-md-.5 fas fa-arrow-up up-icon"> 01 </div> -->
+                                    <!-- <div class="col-md-.5 fas fa-arrow-up d-flex flex-column justify-content-center px-2"> 01 </div> -->
                                     <img src="images/best_seller/literature1.jpg" alt="" class="img-fluid">
                                 </a>
                             </div>
@@ -401,39 +409,39 @@
                 <div class="row">
                     <div class="col-md-5 content-first img-fluid">
                         <a href="" class="first-best-book">
-                            <div class="col-md-.5 fas fa-arrow-up up-icon"> 01 </div>
+                            <div class="col-md-.5 fas fa-arrow-up d-flex flex-column justify-content-center px-2"> 01 </div>
                             <img src="images/best_seller/foreign1.jpg" alt="" class="col-md-1">
-                            <div class="col-md-5 description-text">Life BRE A1-A2: Student Book With Web App Code And
+                            <div class="col-md-5 description-text w-60 m-3 d-flex flex-direction-column justify-content-center left-0">Life BRE A1-A2: Student Book With Web App Code And
                                 Online
                                 Workbook 2nd Edition</div>
                         </a>
 
                         <a href="" class="second-best-book">
-                            <div class="col-md-.5 fas fa-arrow-up up-icon"> 02 </div>
+                            <div class="col-md-.5 fas fa-arrow-up d-flex flex-column justify-content-center px-2"> 02 </div>
                             <img src="images/best_seller/foreign2.jpg" alt="" class="col-md-1">
-                            <div class="col-md-5 description-text">Life BRE A2-B1: Student Book With Web App Code And
+                            <div class="col-md-5 description-text w-60 m-3 d-flex flex-direction-column justify-content-center left-0">Life BRE A2-B1: Student Book With Web App Code And
                                 Online
                                 Workbook 2nd Edition</div>
                         </a>
 
                         <a href="" class="third-best-book">
-                            <div class="col-md-.5 fas fa-arrow-up up-icon"> 03 </div>
+                            <div class="col-md-.5 fas fa-arrow-up d-flex flex-column justify-content-center px-2"> 03 </div>
                             <img src="images/best_seller/foreign3.jpg" alt="" class="col-md-1">
-                            <div class="col-md-5 description-text">English Grammar in Use Book w Ans</div>
+                            <div class="col-md-5 description-text w-60 m-3 d-flex flex-direction-column justify-content-center left-0">English Grammar in Use Book w Ans</div>
                         </a>
 
                         <a href="" class="fourth-best-book">
-                            <div class="col-md-.5 fas fa-arrow-up up-icon"> 04 </div>
+                            <div class="col-md-.5 fas fa-arrow-up d-flex flex-column justify-content-center px-2"> 04 </div>
                             <img src="images/best_seller/foreign4.jpg" alt="" class="col-md-1">
-                            <div class="col-md-5 description-text">Oxford Advanced Learner's Dictionary: Paperback -
+                            <div class="col-md-5 description-text w-60 m-3 d-flex flex-direction-column justify-content-center left-0">Oxford Advanced Learner's Dictionary: Paperback -
                                 10th
                                 Edition</div>
                         </a>
 
                         <a href="" class="fifth-best-book">
-                            <div class="col-md-.5 fas fa-arrow-up up-icon"> 05 </div>
+                            <div class="col-md-.5 fas fa-arrow-up d-flex flex-column justify-content-center px-2"> 05 </div>
                             <img src="images/best_seller/foreign5.jpg" alt="" class="col-md-1">
-                            <div class="col-md-5 description-text">Oxford Essential Dictionary - New Ed - W/CD-Rom</div>
+                            <div class="col-md-5 description-text w-60 m-3 d-flex flex-direction-column justify-content-center left-0">Oxford Essential Dictionary - New Ed - W/CD-Rom</div>
                         </a>
 
                     </div>
@@ -565,35 +573,35 @@
                 <div class="row">
                     <div class="col-md-5 content-first">
                         <a href="" class="first-best-book">
-                            <div class="col-md-.5 fas fa-arrow-up up-icon"> 01 </div>
+                            <div class="col-md-.5 fas fa-arrow-up d-flex flex-column justify-content-center px-2"> 01 </div>
                             <img src="images/best_seller/economic1.jpg" alt="" class="col-md-1">
-                            <div class="col-md-5 description-text">The Usual MBA</div>
+                            <div class="col-md-5 description-text w-60 m-3 d-flex flex-direction-column justify-content-center left-0">The Usual MBA</div>
                         </a>
 
                         <a href="" class="second-best-book">
-                            <div class="col-md-.5 fas fa-arrow-up up-icon"> 02 </div>
+                            <div class="col-md-.5 fas fa-arrow-up d-flex flex-column justify-content-center px-2"> 02 </div>
                             <img src="images/best_seller/economic2.jpg" alt="" class="col-md-1">
-                            <div class="col-md-5 description-text">21st Century Monetary Policy</div>
+                            <div class="col-md-5 description-text w-60 m-3 d-flex flex-direction-column justify-content-center left-0">21st Century Monetary Policy</div>
                         </a>
 
                         <a href="" class="third-best-book">
-                            <div class="col-md-.5 fas fa-arrow-up up-icon"> 03 </div>
+                            <div class="col-md-.5 fas fa-arrow-up d-flex flex-column justify-content-center px-2"> 03 </div>
                             <img src="images/best_seller/economic3.jpg" alt="" class="col-md-1">
-                            <div class="col-md-5 description-text">The art of strategic thinking</div>
+                            <div class="col-md-5 description-text w-60 m-3 d-flex flex-direction-column justify-content-center left-0">The art of strategic thinking</div>
                         </a>
 
                         <a href="" class="fourth-best-book">
-                            <div class="col-md-.5 fas fa-arrow-up up-icon"> 04 </div>
+                            <div class="col-md-.5 fas fa-arrow-up d-flex flex-column justify-content-center px-2"> 04 </div>
                             <img src="images/best_seller/economic4.jpg" alt="" class="col-md-1">
-                            <div class="col-md-5 description-text">Currency Wars - Part 1 - Who Really Is the Richest
+                            <div class="col-md-5 description-text w-60 m-3 d-flex flex-direction-column justify-content-center left-0">Currency Wars - Part 1 - Who Really Is the Richest
                                 Person
                                 in the World?</div>
                         </a>
 
                         <a href="" class="fifth-best-book">
-                            <div class="col-md-.5 fas fa-arrow-up up-icon"> 05 </div>
+                            <div class="col-md-.5 fas fa-arrow-up d-flex flex-column justify-content-center px-2"> 05 </div>
                             <img src="images/best_seller/economic5.jpg" alt="" class="col-md-1">
-                            <div class="col-md-5 description-text">Currency Wars - Part 2 - The Dominance of Financial
+                            <div class="col-md-5 description-text w-60 m-3 d-flex flex-direction-column justify-content-center left-0">Currency Wars - Part 2 - The Dominance of Financial
                                 Power
                             </div>
                         </a>
@@ -727,33 +735,33 @@
                 <div class="row">
                     <div class="col-md-5 content-first">
                         <a href="" class="first-best-book">
-                            <div class="col-md-.5 fas fa-arrow-up up-icon"> 01 </div>
+                            <div class="col-md-.5 fas fa-arrow-up d-flex flex-column justify-content-center px-2"> 01 </div>
                             <img src="images/best_seller/children1.jpg" alt="" class="col-md-1">
-                            <div class="col-md-5 description-text">The Little Prince</div>
+                            <div class="col-md-5 description-text w-60 m-3 d-flex flex-direction-column justify-content-center left-0">The Little Prince</div>
                         </a>
 
                         <a href="" class="second-best-book">
-                            <div class="col-md-.5 fas fa-arrow-up up-icon"> 02 </div>
+                            <div class="col-md-.5 fas fa-arrow-up d-flex flex-column justify-content-center px-2"> 02 </div>
                             <img src="images/best_seller/children2.jpg" alt="" class="col-md-1">
-                            <div class="col-md-5 description-text">Password Class New Version - Episode 6</div>
+                            <div class="col-md-5 description-text w-60 m-3 d-flex flex-direction-column justify-content-center left-0">Password Class New Version - Episode 6</div>
                         </a>
 
                         <a href="" class="third-best-book">
-                            <div class="col-md-.5 fas fa-arrow-up up-icon"> 03 </div>
+                            <div class="col-md-.5 fas fa-arrow-up d-flex flex-column justify-content-center px-2"> 03 </div>
                             <img src="images/best_seller/children3.jpg" alt="" class="col-md-1">
-                            <div class="col-md-5 description-text">Password Class New Version - Episode 2</div>
+                            <div class="col-md-5 description-text w-60 m-3 d-flex flex-direction-column justify-content-center left-0">Password Class New Version - Episode 2</div>
                         </a>
 
                         <a href="" class="fourth-best-book">
-                            <div class="col-md-.5 fas fa-arrow-up up-icon"> 04 </div>
+                            <div class="col-md-.5 fas fa-arrow-up d-flex flex-column justify-content-center px-2"> 04 </div>
                             <img src="images/best_seller/children4.jpg" alt="" class="col-md-1">
-                            <div class="col-md-5 description-text">Password Class New Version - Episode 4</div>
+                            <div class="col-md-5 description-text w-60 m-3 d-flex flex-direction-column justify-content-center left-0">Password Class New Version - Episode 4</div>
                         </a>
 
                         <a href="" class="fifth-best-book">
-                            <div class="col-md-.5 fas fa-arrow-up up-icon"> 05 </div>
+                            <div class="col-md-.5 fas fa-arrow-up d-flex flex-column justify-content-center px-2"> 05 </div>
                             <img src="images/best_seller/children5.jpg" alt="" class="col-md-1">
-                            <div class="col-md-5 description-text">Password Class New Version - Episode 5</div>
+                            <div class="col-md-5 description-text w-60 m-3 d-flex flex-direction-column justify-content-center left-0">Password Class New Version - Episode 5</div>
                         </a>
 
                     </div>
@@ -885,37 +893,37 @@
                 <div class="row">
                     <div class="col-md-5 content-first">
                         <a href="" class="first-best-book">
-                            <div class="col-md-.5 fas fa-arrow-up up-icon"> 01 </div>
+                            <div class="col-md-.5 fas fa-arrow-up d-flex flex-column justify-content-center px-2"> 01 </div>
                             <img src="images/best_seller/other1.jpg" alt="" class="col-md-1">
-                            <div class="col-md-5 description-text">No Death, No Birth, Don't Be Afraid</div>
+                            <div class="col-md-5 description-text w-60 m-3 d-flex flex-direction-column justify-content-center left-0">No Death, No Birth, Don't Be Afraid</div>
                         </a>
 
                         <a href="" class="second-best-book">
-                            <div class="col-md-.5 fas fa-arrow-up up-icon"> 02 </div>
+                            <div class="col-md-.5 fas fa-arrow-up d-flex flex-column justify-content-center px-2"> 02 </div>
                             <img src="images/best_seller/other2.jpg" alt="" class="col-md-1">
-                            <div class="col-md-5 description-text">No Death No Birth Don't Be Afraid - Hardcover -
+                            <div class="col-md-5 description-text w-60 m-3 d-flex flex-direction-column justify-content-center left-0">No Death No Birth Don't Be Afraid - Hardcover -
                                 Special
                                 Edition</div>
                         </a>
 
                         <a href="" class="third-best-book">
-                            <div class="col-md-.5 fas fa-arrow-up up-icon"> 03 </div>
+                            <div class="col-md-.5 fas fa-arrow-up d-flex flex-column justify-content-center px-2"> 03 </div>
                             <img src="images/best_seller/other3.png" alt="" class="col-md-1">
-                            <div class="col-md-5 description-text">Liu Pham Tu Instructions - Accumulate Blessings,
+                            <div class="col-md-5 description-text w-60 m-3 d-flex flex-direction-column justify-content-center left-0">Liu Pham Tu Instructions - Accumulate Blessings,
                                 Improve
                                 Fortune</div>
                         </a>
 
                         <a href="" class="fourth-best-book">
-                            <div class="col-md-.5 fas fa-arrow-up up-icon"> 04 </div>
+                            <div class="col-md-.5 fas fa-arrow-up d-flex flex-column justify-content-center px-2"> 04 </div>
                             <img src="images/best_seller/other4.png" alt="" class="col-md-1">
-                            <div class="col-md-5 description-text">Many Times, Many Lives</div>
+                            <div class="col-md-5 description-text w-60 m-3 d-flex flex-direction-column justify-content-center left-0">Many Times, Many Lives</div>
                         </a>
 
                         <a href="" class="fifth-best-book">
-                            <div class="col-md-.5 fas fa-arrow-up up-icon"> 05 </div>
+                            <div class="col-md-.5 fas fa-arrow-up d-flex flex-column justify-content-center px-2"> 05 </div>
                             <img src="images/best_seller/other5.jpg" alt="" class="col-md-1">
-                            <div class="col-md-5 description-text">Writing Volume 1 - Part 2</div>
+                            <div class="col-md-5 description-text w-60 m-3 d-flex flex-direction-column justify-content-center left-0">Writing Volume 1 - Part 2</div>
                         </a>
 
                     </div>
@@ -1047,11 +1055,11 @@
     </div>
 
     <!-- New Book -->
-    <div class="container py-1 best-seller-banner">
-        <div class="best-seller-header">
-            <h3>New Book</h3>
+    <div class="container py-1 new-book-banner">
+        <div class="new-book-header">
+            <h3 class="text-light">New Book</h3>
         </div>
-        <div class="best-seller-button mb-4">
+        <div class="new-book-button mb-4">
             <button id="new1_option" class="button button-option-owl active">Literature</button>
             <button id="new2_option" class="button button-option-owl">Foreign Book</button>
             <button id="new3_option" class="button button-option-owl">Economic Book</button>
@@ -1168,7 +1176,6 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                             <div class="d-flex justify-content-between flex-lg-wrap">
                                 <p class="text-dark fs-5 fw-bold">$7.99 / kg</p>
-                                btn border border-secondary rounded-pill px-3 py-1 mb-4 text-primary
                             </div>
                         </div>
                     </div>
@@ -1891,7 +1898,6 @@
     </div> -->
 
     <!-- Footer Start -->
-
     <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
         <div class="container py-5">
             <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
@@ -1925,23 +1931,17 @@
                     </div>
                 </div>
             </div>
+
             <div class="row g-5">
-
-
-
-                <div class="">
-                    <div class="footer-item">
-                        <!-- <h4 class="text-light mb-3">Contact</h4> -->
-                        <div id="footer_image" class="col-md-12">
-                            <p>
-                                <img src="images/header_image/KATH_label.png" class="img-fluid" alt="KATH">
-                            </p>
-                        </div>
-                        <p>Address: 1429 Netus Rd, NY 48247</p>
-                        <p>Email: Example@gmail.com</p>
-                        <p>Phone: +0123 4567 8910</p>
+                <div class="footer-item d-flex">
+                    <div class="left-col w-50 text-start border-end">
+                        <p><strong>Address:</strong> 1429 Netus Rd, NY 48247</p>
+                        <p><strong>Email:</strong> Exampl1234e@gmail.com</p>
+                        <p><strong>Phone:</strong> +0123 4567 8910</p>
+                    </div>
+                    <div class="right-col w-50 text-end">
                         <p>Payment Accepted</p>
-                        <img id="momo_payment" src="images/footer_payment/momo_pay.png" class="img-fluid" alt="">
+                        <img id="momo_payment" src="images/footer_payment/momo_pay.png" class="img-fluid" alt="Momo Payment" style="width: 5%;">
                     </div>
                 </div>
             </div>
@@ -1952,7 +1952,7 @@
     <!-- Back-to-top Button -->
     <div class="back-to-top">
         <a href="#">
-            <img src="images/back_to_top.png" alt="">
+            <img src="images/back_to_top.png" alt="Back To Top Image" class="position-fixed" style="width: 5%; bottom: 5%; right: 1%;">
         </a>
     </div>
 
